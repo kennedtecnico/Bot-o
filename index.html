@@ -5,12 +5,67 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>PIX — Copiar chave</title>
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial;margin:0;display:flex;flex-direction:column;align-items:center;gap:18px;padding:28px;background:#fafafa;color:#111}
-    .card{max-width:420px;width:100%;background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(0,0,0,.06);text-align:center}
-    img.qr{max-width:260px;width:80%;height:auto;margin:0 auto 8px;display:block}
-    .key{word-break:break-all;background:#f7f7f7;padding:10px;border-radius:8px;font-weight:600}
-    button.copy{margin-top:12px;padding:12px 18px;border-radius:10px;border:0;font-size:16px;cursor:pointer}
-    .ok{margin-top:10px;color:green;display:none}
+    body {
+      font-family: system-ui, Segoe UI, Roboto, Arial;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f9f9f9;
+      color: #111;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #fff;
+      border-radius: 12px;
+      padding: 28px 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
+      text-align: center;
+    }
+    h1 {
+      color: #0a1a40; /* Azul marinho */
+      margin-bottom: 18px;
+      font-size: 22px;
+    }
+    img.qr {
+      max-width: 260px;
+      width: 80%;
+      height: auto;
+      margin: 0 auto 12px;
+      display: block;
+    }
+    .key {
+      word-break: break-all;
+      background: #f7f7f7;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+    button.copy {
+      margin-top: 8px;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 0;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #0a1a40; /* Azul marinho */
+      color: #fff;
+      font-weight: 600;
+      transition: background 0.2s ease;
+    }
+    button.copy:hover {
+      background-color: #152b6f;
+    }
+    .ok {
+      margin-top: 10px;
+      color: green;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -21,7 +76,7 @@
     <div id="pixKey" class="key">kennedkekegetner@gmail.com</div>
     <button id="btnCopy" class="copy">Copiar chave PIX</button>
     <div id="msgOk" class="ok">Chave copiada ✅</div>
-    <p style="font-size:13px;color:#666;margin-top:14px">Se estiver no mesmo celular que quer pagar, use o QR acima. Se estiver em outro aparelho, toque em “Copiar” e cole no app do banco.</p>
+    <p style="font-size:13px;color:#666;margin-top:14px">Se estiver no mesmo celular que quer pagar, toque em “Copiar” e cole no app do banco . Se estiver em outro aparelho, leia o QR Code acima.</p>
   </div>
 
   <script>
